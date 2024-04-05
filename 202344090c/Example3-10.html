@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>체크박스, 레디오버튼, 셀렉트</h3>
+    <hr>
+    <form>
+        <label>짜장면 : <input type="checkbox" value="1"></label>
+        짬 &nbsp;뽕 : <input type="checkbox" value="2" checked>
+        탕수육 : <input type="checkbox" value="3">
+        <hr>
+        <input type="radio" name="china" value="1" checked> 
+            짜장면 <img src="media/jjajang.jpg" width="50" height="50"><br>
+        <input type="radio" name="china" value="2">
+            짬 &nbsp;뽕 <img src="media/zzambbong.jpg" width="50" height="50"><br>   
+        <input type="radio" name="china" value="3">
+            탕수육 <img src="media/tangsuyook.jpg" width="50" height="50"><br>
+        <hr>
+        <select name="china">
+            <option value="1">짜장면</option>
+            <option value="2" selected>짬 뽕</option>
+            <option value="3">탕수육</option>
+        </select>
+        <hr>
+        색 선택 : <input type="color" value="#00ff00" 
+            onchange="document.body.style.color=this.value">
+        </form>
+</body>
+</html>
